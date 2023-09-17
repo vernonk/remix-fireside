@@ -1,38 +1,24 @@
-# Welcome to Remix!
+# Remix 101 Fireside
 
 - [Remix Docs](https://remix.run/docs)
 
-## Development
+## Getting things ready
 
-From your terminal:
-
-```sh
-npm run dev
-```
-
-This starts your app in development mode, rebuilding assets on file changes.
-
-## Deployment
-
-First, build your app for production:
+* Clone the repository
+* Make sure you're on Node 18 
+* Run `git fetch origin` so you have reference to the necessary branches
+* Run `npm ci`
+* Create a `.env` file in the root of your repo with the following:
 
 ```sh
-npm run build
+DATABASE_URL="file:./dev.db"
+SESSION_SECRET=anythingyouwanthere
 ```
 
-Then run the app in production mode:
+* From the terminal run `npx prisma db push` and then `npx prisma db seed`
+  
+You're ready to go for the Fireside!
 
-```sh
-npm start
-```
+## Running the app
 
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
+* Run `npm run dev` to start the app
