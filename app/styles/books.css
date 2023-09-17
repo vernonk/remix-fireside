@@ -1,0 +1,15 @@
+/* these styles *only* apply to `books.*` routes! */
+ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+}
+
+li {
+  flex-basis: 200px;
+}
+
+p {
+  font-style: oblique;
+}

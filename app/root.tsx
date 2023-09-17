@@ -1,4 +1,5 @@
 import {
+  Link,
   LiveReload,
   Outlet,
 } from "@remix-run/react";
@@ -13,9 +14,17 @@ export default function App() {
       </head>
       <body>
         <div className="container">
+          <div className="header">
+            <h1>📚 Fireside Bookshelf</h1>
+            <nav>
+              <Link to="/">Home</Link>
+              <Link to="/books">Books</Link>
+              <Link to="/books/new">Add Book</Link>
+            </nav>
+          </div>
           <Outlet />
-          <LiveReload />
         </div>
+        <LiveReload />
       </body>
     </html>
   );
