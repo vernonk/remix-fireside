@@ -1,13 +1,13 @@
 /* these styles *only* apply to `books.*` routes! */
 ul {
   display: flex;
-  gap: 10px;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
   list-style: none;
 }
 
 li {
-  flex-basis: 200px;
+  flex-basis: 250px;
 }
 
 p {

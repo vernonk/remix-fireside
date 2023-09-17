@@ -1,4 +1,4 @@
-import type { ActionFunctionArgs } from "@remix-run/node";
+import type { ActionFunctionArgs } from '@remix-run/node';
 
 import { createUserSession, login } from '~/utils/session.server';
 import { badRequest } from "~/utils/request.server";
