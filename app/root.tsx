@@ -1,9 +1,17 @@
+import type { LinksFunction } from '@remix-run/node';
+
 import {
   Link,
+  Links,
   LiveReload,
   Outlet,
 } from "@remix-run/react";
 
+import stylesUrl from '~/styles/index.css';
+
+export const links: LinksFunction = () => [
+  { rel: 'stylesheet', href: stylesUrl },
+];
 export default function App() {
   return (
     <html lang="en">
@@ -11,6 +19,7 @@ export default function App() {
         <title>Fireside Bookshelf</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <Links />
       </head>
       <body>
         <div className="container">
